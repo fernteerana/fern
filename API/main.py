@@ -35,8 +35,10 @@ def formula(s,t):
 def r(r1,r2,r3):
     rt1 = float(r1)+float(r2)+float(r3)
     rt2 = ((1/float(r1)) + (1/float(r2) + (1/float(r3))))**-1
-    #data = {"อนุกรม":rt1, "ขนาน":rt2}
-    return data 
+    #data = 
+    data = {"อนุกรม":rt1, "ขนาน":rt2}
+    return data
+
 
 if __name__=="__main__":
     uvicorn.run(app, host="192.168.171.203", port=8000)
